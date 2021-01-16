@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="programmer" class="cn.oneyoung.spring.ioc.entity.Programmer">
+        <property name="name" value="oneyoung"/>
+        <property name="address" value="china wuhan"/>
+        <property name="age" value="20"/>
+        <property name="department" value="cloud"/>
+        <property name="languages">
+            <array>
+                <value>java</value>
+                <value>c++</value>
+            </array>
+        </property>
+    </bean>
+
+    <bean id="employee" class="cn.oneyoung.spring.ioc.entity.Employee" primary="true">
+        <property name="name" value="employee"/>
+        <property name="department" value="java"/>
+        <property name="age" value="30"/>
+    </bean>
+</beans>
