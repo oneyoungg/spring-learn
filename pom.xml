@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-ioc</module>
+        <module>spring-bean</module>
+        <module>common</module>
     </modules>
 
     <properties>
@@ -64,6 +66,12 @@
                 <version>1.18.16</version>
             </dependency>
 
+            <dependency>
+                <groupId>cn.oneyoung</groupId>
+                <artifactId>common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -83,6 +91,11 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.oneyoung</groupId>
+            <artifactId>common</artifactId>
         </dependency>
 
     </dependencies>

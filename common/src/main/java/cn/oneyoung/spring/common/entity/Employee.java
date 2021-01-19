@@ -1,4 +1,4 @@
-package cn.oneyoung.spring.ioc.entity;
+package cn.oneyoung.spring.common.entity;
 
 import lombok.Getter;
 import lombok.Setter;

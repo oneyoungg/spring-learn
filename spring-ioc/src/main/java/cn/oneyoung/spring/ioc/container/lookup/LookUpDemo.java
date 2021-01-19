@@ -1,6 +1,6 @@
 package cn.oneyoung.spring.ioc.container.lookup;
 
-import cn.oneyoung.spring.ioc.entity.Employee;
+import cn.oneyoung.spring.common.entity.Employee;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -24,7 +24,7 @@ public class LookUpDemo {
     public static void lookUpListAble(BeanFactory beanFactory, Class<?> clazz) {
         ListableBeanFactory listableBeanFactory = (ListableBeanFactory) beanFactory;
         Map<String, ?> beansOfType = listableBeanFactory.getBeansOfType(clazz);
-        System.out.println("listAble:     ");
+        System.out.println("===listAble===");
         beansOfType.forEach((s, o) -> System.out.println(s + " = " + o));
     }
 
