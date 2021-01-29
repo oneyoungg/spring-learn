@@ -12,6 +12,7 @@
         <module>spring-ioc</module>
         <module>spring-bean</module>
         <module>common</module>
+        <module>test</module>
     </modules>
 
     <properties>
